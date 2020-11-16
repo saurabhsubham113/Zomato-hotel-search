@@ -6,7 +6,9 @@ export default class API {
         return CustomAxios.get(`locations?query=${place}`);
     }
 
-    static getRestrauntList(id,type) {
-        return CustomAxios.get(`location_details?entity_id=${id}&entity_type=${type}`);
+    static getSearch(id,type,cuisine) {
+        const url = encodeURI(`search?entity_id=${id}&entity_type=${type}&cuisines=${cuisine}`)
+        console.log(url);
+        return CustomAxios.get(url);
     }
 }

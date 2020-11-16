@@ -1,11 +1,13 @@
 import React from 'react';
+import SearchBar from './components/SearchBar/SearchBar'
 import './App.css';
-import SearchBar from './components/SearchBar';
+import Card from './components/Card/Card';
 function App() {
 
   return (
     <div className="App">
-      <SearchBar />
+      {/* <SearchBar /> */}
+      <Card />
     </div>
   );
 }
